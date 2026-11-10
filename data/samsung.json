@@ -1,0 +1,30 @@
+{
+  "_readme": "Every input has v (value), src (where it came from) and conf (high/medium/low). KRW trillion unless noted. Edit this file to refresh the model or swap in another company.",
+  "company": "Samsung Electronics",
+  "as_of": "2026-11-05",
+  "price_krw":        {"v": 203000, "src": "KRX close 2026-11-05 (news report); 11-09 close not verified", "conf": "medium"},
+  "shares_bn":        {"v": 6.5,    "src": "Common ~5.85bn outstanding + preferred ~0.82bn, treasury excluded (preferred count unverified; preferred trades at a discount)", "conf": "low"},
+  "net_cash_jun26":   {"v": 167,    "src": "Derived from Q2 2026 balance sheet (cash+ST financial assets - borrowings)", "conf": "medium"},
+  "oi_2025":          {"v": 43.6,   "src": "FY2025 reported operating income", "conf": "high"},
+  "oi_2026e":         {"v": 365,    "src": "Consensus range ~360-375tn after Q3 2026 results", "conf": "medium"},
+  "oi_2027e":         {"v": 500,    "src": "Consensus ~500tn+ (base); bull/bear in scenarios", "conf": "low"},
+  "da":               {"v": 45,     "src": "Analyst estimate of depreciation & amortisation (~40-50tn)", "conf": "low"},
+  "capex_2027e":      {"v": 80,     "src": "Analyst estimate: capex ramps in upcycle (FY2025 reported 47.5tn)", "conf": "low"},
+  "capex_mid":        {"v": 60,     "src": "Analyst estimate of mid-cycle capex", "conf": "low"},
+  "capex_2026e":      {"v": 65,     "src": "Analyst estimate", "conf": "low"},
+  "net_income_2026e": {"v": 290,    "src": "Derived: OI x (1-tax) + net finance income", "conf": "low"},
+  "book_equity_2026e":{"v": 700,    "src": "Derived: FY2025 equity 436.3tn + 2026E earnings - dividends", "conf": "low"},
+  "dividends_2026e":  {"v": 10,     "src": "Analyst estimate", "conf": "low"},
+  "tax_rate":         {"v": 0.25,   "src": "Approx. Korean effective rate", "conf": "medium"},
+  "rf":               {"v": 0.033,  "src": "Approx. Korea 10y yield", "conf": "low"},
+  "beta":             {"v": 1.2,    "src": "Assumption", "conf": "low"},
+  "mrp":              {"v": 0.065,  "src": "Assumption", "conf": "low"},
+  "cost_of_debt":     {"v": 0.045,  "src": "Assumption", "conf": "low"},
+  "debt_weight":      {"v": 0.05,   "src": "Samsung is nearly unlevered", "conf": "medium"},
+  "terminal_growth":  {"v": 0.025,  "src": "Assumption", "conf": "low"},
+  "scenarios": {
+    "bear": {"oi_2027": 380, "oi_mid": 80,  "prob": 0.25},
+    "base": {"oi_2027": 500, "oi_mid": 130, "prob": 0.50},
+    "bull": {"oi_2027": 560, "oi_mid": 200, "prob": 0.25}
+  }
+}

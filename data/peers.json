@@ -1,0 +1,10 @@
+{
+  "_readme": "Peer multiples are ROUGH ESTIMATES (conf low) built from Nov-2026 prices (SK hynix 1,270,000 KRW; TSM $353.10; MU $656.39) and consensus-style earnings. Refresh from Bloomberg/FactSet/Capital IQ before relying on them.",
+  "as_of": "2026-11-05",
+  "peers": {
+    "SK hynix": {"fwd_pe": 6.0,  "fwd_ev_ebitda": 4.5,  "pb": 3.0, "conf": "low"},
+    "Micron":   {"fwd_pe": 7.5,  "fwd_ev_ebitda": 5.5,  "pb": 3.2, "conf": "low"},
+    "TSMC":     {"fwd_pe": 19.0, "fwd_ev_ebitda": 12.0, "pb": 7.0, "conf": "low"}
+  },
+  "discount": {"v": 0.15, "src": "Conglomerate / governance / preferred-share discount applied to peer multiples (assumption)"}
+}
